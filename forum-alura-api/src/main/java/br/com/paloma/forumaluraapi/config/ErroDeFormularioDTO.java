@@ -1,0 +1,21 @@
+package br.com.paloma.forumaluraapi.config;
+
+//para devolver um novo json pro handler e nao o original
+public class ErroDeFormularioDTO {
+
+    private String campo;
+    private String erro;
+
+    public ErroDeFormularioDTO(String campo, String erro) {
+        this.campo = campo;
+        this.erro = erro;
+    }
+
+    public String getCampo() {
+        return campo;
+    }
+
+    public String getErro() {
+        return erro;
+    }
+}
